@@ -11,7 +11,7 @@ const Header = () => {
             <div className="text">lashCard</div>
         </div>
         <div className="icon-section">
-            <BsPersonCircle size={50} color='#DA1124'/>
+            <BsPersonCircle size={30} color='#DA1124'/>
         </div>
     </HeaderBar>
   )

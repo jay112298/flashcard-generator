@@ -5,8 +5,11 @@ export const HeaderBar = styled.section`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 15px;
     background: #fff;
-    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.71);
+    -webkit-box-shadow: 0px 3px 20px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 3px 20px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 3px 20px 0px rgba(0,0,0,0.5);
 
     .logo-section {
         display: flex;
