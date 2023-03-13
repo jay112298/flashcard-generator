@@ -1,15 +1,11 @@
 import React from 'react'
 import { Card } from './CreateGroup.st'
 
-const CreateGroup = () => {
+const CreateGroup = (props) => {
 
-  const [formData, setFormData] = React.useState({
-    group: "",
-    description: "",
-  })
 
   function handleChange(event) {
-    setFormData((prevFormData) => {
+    props.setFormData((prevFormData) => {
       return {
         ...prevFormData,
         [event.target.name]: event.target.value,
@@ -17,7 +13,7 @@ const CreateGroup = () => {
     })
   } 
 
-  console.log(formData)
+  
 
   return (
     <Card>

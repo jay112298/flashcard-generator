@@ -5,13 +5,23 @@ import CreateButton from '../../components/CreateButton/CreateButton'
 
 const Create = () => {
 
+  const [formData, setFormData] = React.useState([{
+    group: "",
+    description: "",
+    cards: []
+  },])
 
+  var categoryData
+  function getData(data) {
+    console.log(data);
+    categoryData = data
+  }
 
   return (
     <div>
-      <CreateGroup formData={formData}/>
+      <CreateGroup setFormData={setFormData}/>
       <CreateCard />
-      <CreateButton />
+      <CreateButton formData={formData}/>
     </div>
   )
 }
